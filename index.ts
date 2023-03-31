@@ -12,7 +12,6 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 /* Route Handlers */
-app.use('/', () => "Black Out API");
 app.use('/outages',outagesRoutes);
 app.listen(PORT, () => console.log("Started listening"));
 

@@ -5,6 +5,6 @@ const router = express.Router();
 import cntrlOutages from '../controllers/outagesController';
 
 //GET Routes
-router.get('/outages/:prefectureId', cntrlOutages.fetch);
+router.get('/getOutagesOfPrefecture/:prefectureId', cntrlOutages.fetch);
 
 export default router;
