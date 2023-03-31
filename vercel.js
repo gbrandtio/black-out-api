@@ -1,14 +1,16 @@
 {
   "builds": [
-      {
-          "src": "index.js",
-          "use": "@vercel/node"
-      }
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
   ],
-  "routes": [
+  {
+    "rewrites": [
       {
-        "src": "/outages/getOutagesOfPrefecture/:prefectureId",
-        "dest": "index.js"
+        "source": "/api/(.*)",
+        "destination": "/api"
       }
-  ]
+    ]
+  }
 }

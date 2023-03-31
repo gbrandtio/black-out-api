@@ -7,7 +7,7 @@
     "tests": "tsc --build -clean && tsc && mocha --require ts-node/register tests/**/*.ts -r dotenv/config",
     "tsc": "tsc",
     "lint": "eslint . --ext .ts --fix",
-    "start": "tsc --build -clean && npm run tsc && node public/index.js",
+    "start": "tsc --build -clean && npm run tsc && node api/index.js",
     "build": "tsc --build -clean && npm run tsc"
   },
   "keywords": [],
