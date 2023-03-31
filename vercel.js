@@ -8,7 +8,7 @@
   "routes": [
       {
         "src": "/outages/outages/*",
-        "dest": "/outages/outages/*"
+        "dest": "index.js"
       }
   ]
 }
