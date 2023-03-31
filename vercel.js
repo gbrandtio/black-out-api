@@ -7,7 +7,7 @@
   ],
   "routes": [
       {
-        "src": "/outages/outages/*",
+        "src": "/outages/getOutagesOfPrefecture/:prefectureId",
         "dest": "index.js"
       }
   ]
